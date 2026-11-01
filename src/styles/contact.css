@@ -1,0 +1,37 @@
+.contact-layout { display: grid; grid-template-columns: 0.8fr 1.4fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+@media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+
+.contact-details section { padding: 1.1rem 0; border-top: 1px solid var(--line); }
+.contact-details section:first-child { border-top: 3px solid var(--forest); }
+.contact-details h2 { font-size: var(--step-0); font-family: var(--font-body); font-weight: 600; color: var(--fern); margin-bottom: 0.3rem; letter-spacing: 0; }
+.contact-details p { margin: 0 0 0.2rem; }
+.contact-details a { font-weight: 500; }
+.hours { margin: 0; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 22rem; }
+.hours dd { margin: 0; font-weight: 500; }
+
+.enquiry { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.4rem, 4vw, 2.4rem); }
+.enquiry h2 { font-size: var(--step-1); }
+.enquiry__intro { color: var(--muted); }
+.enquiry__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.2rem; }
+@media (max-width: 600px) { .enquiry__grid { grid-template-columns: 1fr; } }
+.field { margin-bottom: 1.1rem; }
+.field label { display: block; font-weight: 500; font-size: var(--step--1); margin-bottom: 0.3rem; }
+.field input, .field select, .field textarea {
+  width: 100%; font: inherit; color: var(--ink); background: #fff; padding: 0.7rem 0.85rem;
+  border: 1px solid #b9c5b3; border-radius: var(--radius);
+}
+.field textarea { resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid var(--leaf); outline-offset: 0; border-color: var(--fern); }
+.field--error input, .field--error select { border-color: #b3261e; }
+.field__error { color: #b3261e; font-size: var(--step--1); margin: 0.3rem 0 0; }
+.enquiry__trap { position: absolute; left: -9999px; height: 0; overflow: hidden; }
+.enquiry__status { margin-top: 1rem; min-height: 1.5rem; }
+.enquiry__status p { margin: 0; font-weight: 500; }
+.is-success { color: var(--fern); }
+.is-error { color: #b3261e; }
+
+.map iframe { width: 100%; height: clamp(300px, 50vw, 440px); border: 0; border-radius: var(--radius); background: var(--line); }
+.map .text-link { display: inline-block; margin-top: 0.8rem; }
+
+.not-found { text-align: left; }

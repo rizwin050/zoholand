@@ -1,0 +1,67 @@
+.container { width: min(var(--container), 100% - 2.5rem); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip-link { position: absolute; left: 1rem; top: -4rem; z-index: 100; background: var(--forest); color: #fff; padding: 0.6rem 1rem; border-radius: var(--radius); }
+.skip-link:focus { top: 1rem; }
+.route-loading { min-height: 60vh; display: grid; place-items: center; color: var(--muted); }
+
+.section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+.section--board { background: var(--board-pale); }
+.section--forest { background: var(--forest); color: #eaf2e6; }
+.section--forest h2 { color: #fff; }
+.section--forest p { color: #c8d8c4; }
+
+.section-heading { margin-bottom: clamp(1.8rem, 4vw, 3rem); max-width: 46rem; }
+.section-heading__eyebrow { color: var(--fern); font-weight: 600; margin-bottom: 0.4rem; }
+.section-heading__intro { font-size: var(--step-1); line-height: 1.5; color: var(--muted); margin: 0; }
+.section--forest .section-heading__intro { color: #c8d8c4; }
+
+.btn {
+  display: inline-block; padding: 0.85rem 1.6rem; border-radius: var(--radius);
+  font: 600 var(--step-0)/1.2 var(--font-body); text-decoration: none; cursor: pointer;
+  border: 2px solid transparent; transition: background-color .15s, color .15s, border-color .15s;
+}
+.btn--primary { background: var(--leaf); color: var(--forest); }
+.btn--primary:hover { background: #82c446; }
+.btn--light { border-color: rgba(255, 255, 255, 0.8); color: #fff; background: transparent; }
+.btn--light:hover { background: #fff; color: var(--forest); }
+.btn--ghost { border-color: var(--forest); color: var(--forest); background: transparent; }
+.btn--ghost:hover { background: var(--forest); color: #fff; }
+.btn--dark { background: var(--forest); color: #fff; }
+.btn--dark:hover { background: var(--forest-2); }
+.btn[disabled] { opacity: 0.6; cursor: progress; }
+.text-link { font-weight: 600; text-underline-offset: 4px; }
+
+/* Growth-ring motif */
+.rings { color: #fff; }
+.rings circle {
+  fill: none; stroke: currentColor; stroke-width: 14;
+  stroke-dasharray: var(--dash) 2;
+  animation: ring-draw 1.8s cubic-bezier(0.22, 0.7, 0.2, 1) both;
+}
+@keyframes ring-draw { from { stroke-dasharray: 0 2; } to { stroke-dasharray: var(--dash) 2; } }
+
+/* Page header */
+.page-header { position: relative; overflow: hidden; background: var(--forest); color: #fff; padding-block: clamp(3.5rem, 8vw, 6rem); }
+.page-header h1 { color: #fff; margin-bottom: 0.4em; }
+.page-header__lead { font-size: var(--step-1); line-height: 1.5; color: #c8d8c4; margin: 0; max-width: 40rem; }
+.page-header__rings { position: absolute; right: -5rem; top: 50%; width: 26rem; transform: translateY(-50%); opacity: 0.1; pointer-events: none; }
+.page-header .container { position: relative; }
+
+/* CTA band */
+.cta-band { background: var(--leaf); color: var(--forest); padding-block: clamp(2.5rem, 6vw, 4rem); }
+.cta-band__inner { display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; align-items: center; justify-content: space-between; }
+.cta-band h2 { margin-bottom: 0.3em; }
+.cta-band p { margin: 0; }
+.cta-band__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+.cta-band .btn--primary { background: var(--forest); color: #fff; }
+.cta-band .btn--primary:hover { background: var(--forest-2); }
+
+/* Tables */
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+.data-table { width: 100%; border-collapse: collapse; font-size: var(--step--1); min-width: 34rem; }
+.data-table caption { text-align: left; padding: 1rem 1.2rem; font-weight: 600; background: var(--paper); }
+.data-table th, .data-table td { padding: 0.75rem 1.2rem; text-align: left; border-top: 1px solid var(--line); }
+.data-table thead th { background: var(--board-pale); font-weight: 600; }
+.data-table tbody th { font-weight: 400; }
+.data-table__ours { font-weight: 600; color: var(--fern); }
+.data-table--small { min-width: 0; max-width: 26rem; background: #fff; border: 1px solid var(--line); }
