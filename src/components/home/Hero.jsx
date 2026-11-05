@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="hero__shade" />
       <RingsMark className="hero__rings" />
       <div className="container hero__inner">
-        <p className="hero__kicker">Greenland Particle Boards, Perumbavoor, Kerala</p>
+        <p className="hero__kicker">Zohaland Particle Boards, Perumbavoor, Kerala</p>
         <h1>Particle boards, engineered to hold.</h1>
         <p className="hero__lead">
           Plain and pre-laminated boards made to IS 3087 and IS 12823, finished in more than 270 decors for
