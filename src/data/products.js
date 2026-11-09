@@ -34,7 +34,7 @@ export const productCategories = [
 
 export const decorDetails = {
   count: '270+',
-  designs: ['Walnuts', 'Oaks', 'Solid colours', 'Marbles'],
-  finishes: ['Glossy', 'Matte', 'Suede'],
+  designs: ['Wood Grains', 'Solids', 'pastels', 'Digital','Marble'],
+  finishes: ['Glossy', 'Matte', 'Suede','UV High Gloss'],
   textures: ['Magic leaves', 'Naagin', 'Magic bricks'],
 };

@@ -8,25 +8,10 @@ export default function ProductPreview() {
       <div className="container">
         <SectionHeading
           id="range-title"
-          title="Three boards, cut to the 8 × 4 ft sheet"
-          intro="Every board is made in 8 × 4 ft sheets and available in E1 and E2 grades where marked."
+          title="Strong, Precise, Superior"
+          intro="Every boaState-of-the-art production line combined with use of single species (Rubber wood) raw material helps us manufacture boards with unmatched density and strength. 
+          Back-to-back two head and four head sanding machines ensure precise thickness of mother boards which results in flawless pre-lamination."
         />
-        <ul className="product-grid">
-          {productCategories.map((p) => (
-            <li key={p.id} className="product-card">
-              <img src={p.image} alt={p.imageAlt} loading="lazy" width="600" height="400" />
-              <div className="product-card__body">
-                <h3>{p.name}</h3>
-                <p>{p.summary}</p>
-                <p className="product-card__meta">
-                  {p.sizes[0].thickness} to {p.sizes[p.sizes.length - 1].thickness}
-                  {p.grades.length > 0 && `, ${p.grades.join(' and ')} grade`}
-                </p>
-                <Link to="/products" className="text-link">See sizes</Link>
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

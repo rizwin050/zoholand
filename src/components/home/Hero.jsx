@@ -12,8 +12,8 @@ export default function Hero() {
         <p className="hero__kicker">Zohaland Particle Boards, Perumbavoor, Kerala</p>
         <h1>Particle boards, engineered to hold.</h1>
         <p className="hero__lead">
-          Plain and pre-laminated boards made to IS 3087 and IS 12823, finished in more than 270 decors for
-          furniture makers, contractors and interior designers.
+          India's trusted manufacturer of 8’x4’ sized Plain and Pre-laminated Particle Boards compliant with IS standards; engineered for strength, consistency, and superior surface quality. 
+          More than 270 decors and multiple textures to choose from.
         </p>
         <div className="hero__actions">
           <Button to="/products">View products</Button>

@@ -16,10 +16,9 @@ export default function DecorShowcase() {
           <SectionHeading
             id="decor-title"
             title={`${decorDetails.count} decors to choose from`}
-            intro="Pre-laminated boards in woodgrains, solid colours and marbles, so one supplier can cover a whole project."
           />
           <dl className="facts">
-            <div><dt>Designs</dt><dd>{decorDetails.designs.join(', ')} and many more</dd></div>
+            <div><dt>Designs</dt><dd>{decorDetails.designs.join(', ')} and more</dd></div>
             <div><dt>Finishes</dt><dd>{decorDetails.finishes.join(', ')}</dd></div>
             <div><dt>Textures</dt><dd>{decorDetails.textures.join(', ')} and more</dd></div>
           </dl>
