@@ -31,6 +31,7 @@
 .product-card p { color: var(--muted); }
 .product-card__meta { font-weight: 500; color: var(--ink) !important; margin-top: auto; }
 
+
 /* Decors */
 .decor { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
 .decor__media { position: relative; padding-bottom: 3.5rem; }

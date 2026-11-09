@@ -11,7 +11,7 @@ export const certifications = [
 export const capacity = [
   { value: 150, suffix: ' CBM', label: 'mother board capacity, per day' },
   { value: 4000, suffix: '+', label: 'laminated boards, per day' },
-  { value: 230, suffix: '+', label: 'pre-lam decors in the library' },
+  { value: 270, suffix: '+', label: 'pre-lam decors in the library' },
   { value: 150, suffix: '+', label: 'people working at the factory' },
 ];
 
