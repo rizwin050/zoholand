@@ -1,7 +1,7 @@
 import plain from '../assets/images/plain_board.jpeg';
 import filler from '../assets/images/Plain_Particle_Board_Filler_Board.jpg';
 import hdhmr  from '../assets/images/HDHMR_Board.jpg';
-import prelaminated from '../assets/images/Pre-laminated_Particle_Board.jpg';
+import prelaminated from '../assets/images/Pre-Laminated_Particle_Board.jpg';
 import uvHighGloss from '../assets/images/uv_high_gloss_board.jpg';
 
 
