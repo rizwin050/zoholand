@@ -1,28 +1,38 @@
 export default function ProductSection({ product, reverse = false }) {
-  const { id, name, summary, grades, image, imageAlt, sizes } = product;
+  const { id, name, tagline, description, specs, applications = [], image, imageAlt } = product;
   return (
-    <article className={`product-section${reverse ? ' product-section--reverse' : ''}`} aria-labelledby={`${id}-title`} id={id}>
-      <img src={image} alt={imageAlt} loading="lazy" width="800" height="600" />
-      <div>
+    <article
+      className={`product-section${reverse ? ' product-section--reverse' : ''}`}
+      aria-labelledby={`${id}-title`}
+      id={id}
+    >
+      <img src={image} alt={imageAlt} loading="lazy" width="800" height="900" />
+
+      <div className="product-info">
+        {tagline && <p className="product-info__tagline">{tagline}</p>}
         <h2 id={`${id}-title`}>{name}</h2>
-        <p>{summary}</p>
-        {grades.length > 0 && (
-          <p className="grade-row">
-            Grades available:
-            {grades.map((g) => <span key={g} className="grade">{g}</span>)}
-          </p>
-        )}
-        <table className="data-table data-table--small">
-          <caption className="sr-only">{name} sizes</caption>
-          <thead>
-            <tr><th scope="col">Thickness</th><th scope="col">Size</th></tr>
-          </thead>
-          <tbody>
-            {sizes.map((s) => (
-              <tr key={s.thickness}><th scope="row">{s.thickness}</th><td>{s.size}</td></tr>
+        <p className="product-info__desc">{description}</p>
+
+        <section className="spec-panel" aria-label={`${name} specifications`}>
+          <h3 className="spec-panel__title">Specifications</h3>
+          <dl className="spec-list">
+            {specs.map((row) => (
+              <div key={row.label}>
+                <dt>{row.label}</dt>
+                <dd>{row.value}</dd>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </dl>
+        </section>
+
+        {applications.length > 0 && (
+          <>
+            <h3 className="chips-title">Typical applications</h3>
+            <ul className="chips">
+              {applications.map((a) => <li key={a}>{a}</li>)}
+            </ul>
+          </>
+        )}
       </div>
     </article>
   );

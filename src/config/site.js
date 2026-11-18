@@ -14,7 +14,7 @@ const address = {
 
 const site = {
   name: 'Zohaland',
-  legalName: 'Greenland Particle Boards Pvt. Ltd.',
+  legalName: 'Zohaland Particle Boards Pvt. Ltd.',
   tagline: 'Create, experiment and adapt to a new world',
   email: 'greenlandparticleboard@gmail.com',
   phones: [

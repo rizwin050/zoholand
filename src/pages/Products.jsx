@@ -25,19 +25,6 @@ export default function Products() {
         </div>
       </section>
 
-      <section className="section section--board" id="decors" aria-labelledby="decors-title">
-        <div className="container decor-page">
-          <img src={decors} alt="Wood-grain laminate decor samples" loading="lazy" />
-          <div>
-            <SectionHeading id="decors-title" title={`${decorDetails.count} pre-lam decors`} intro="Walnuts, oaks, solid colours, marbles and many more. Scan the QR code in our brochure, or ask us for the full shade card." />
-            <dl className="facts">
-              <div><dt>Finishes</dt><dd>{decorDetails.finishes.join(', ')}</dd></div>
-              <div><dt>Textures</dt><dd>{decorDetails.textures.join(', ')} and more</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
       <section className="section" id="specifications" aria-labelledby="spec-title">
         <div className="container">
           <SectionHeading id="spec-title" title="Technical specification" intro="Every result below is from our own 17 mm plain particle board and sits well inside the IS 3087:2005 Grade II limits." />

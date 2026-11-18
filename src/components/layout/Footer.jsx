@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="site-footer__about">
           <img src={logoWhite} alt="Zohaland" width="120" height="111" loading="lazy" />
           <p>
-            Plain and pre-laminated particle boards from {site.legalName}, made in Perumbavoor, Kerala.
+            Plain and pre-laminated particle boards from {site.legalName}( Formerly known as Greenland Particle Boards Pvt. ltd.), Perumbavoor, Kerala.
           </p>
           <p className="site-footer__group">Sister concerns: {sisterConcerns.join(' and ')}</p>
         </div>
