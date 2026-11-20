@@ -3,6 +3,10 @@ import filler from '../assets/images/Plain_Particle_Board_Filler_Board.jpg';
 import hdhmr  from '../assets/images/HDHMR_Board.jpg';
 import prelaminated from '../assets/images/Pre-Laminated_Particle_Board.jpg';
 import uvHighGloss from '../assets/images/uv_high_gloss_board.jpg';
+import boardsstack from '../assets/images/boards-stack.jpg';
+import boardsedge1 from '../assets/images/boards-edge-1.jpg';
+import boardsedge2 from '../assets/images/boards-edge-2.jpg';
+
 
 
 
@@ -25,7 +29,7 @@ export const productCategories = [
     summary: '',
     tagline: 'Ready-to-use surface finish. No secondary lamination required.',
     description:
-      'Our prelaminated particle boards are produced by bonding decorative melamineimpregnated paper to both faces of a precision-engineered particle board under heat and pressure. The result is a board with a hard, scratch-resistant surface that is ready for use in furniture, cabinetry, and interior fit-out without any secondary lamination process.',
+      'Our prelaminated particle boards are produced by bonding decorative melamine impregnated paper to both faces of a precision-engineered particle board under heat and pressure. The result is a board with a hard, scratch-resistant surface that is ready for use in furniture, cabinetry, and interior fit-out without any secondary lamination process.',
     image: prelaminated,
     imageAlt: 'Stack of three plain particle boards of different thickness',
     specs: [
@@ -46,7 +50,7 @@ export const productCategories = [
     tagline: 'Consistent core. Reliable substrate for downstream processing.',
     description:
       'Plain particle boards provide a stable, uniform substrate for furniture manufacturers, fabricators, and contractors who apply their own laminate, veneer, or paint finish. Produced from a blend of wood particles and resin, they offer consistent density and flatness across the board area. ',
-    image: plain,
+    image: filler,
     imageAlt: 'Close-up of a premium plus board edge showing dense core',
     specs: [
       { label: 'Thickness', value: particleSizes },
@@ -106,6 +110,22 @@ export const productCategories = [
       { label: 'Emission Grade', value: 'E2/E1/E0 ' },
     ],
     applications: UV_HIGH_GLOSS_USES,
+  },
+];
+
+export const productCategoriesHome = [
+  {
+    image: boardsstack,
+    imageAlt: 'Stack of three plain particle boards of different thickness',
+    
+  },
+  {
+    image: boardsedge1,
+    imageAlt: 'Close-up of a premium plus board edge showing dense core',
+  },
+  {
+    image: boardsedge2,
+    imageAlt: 'Close-up of a UV high gloss board edge showing glossy finish',
   },
 ];
 export const decorDetails = {

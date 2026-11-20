@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import SectionHeading from '../common/SectionHeading';
-import { productCategories } from '../../data/products';
+import { productCategoriesHome } from '../../data/products';
 
 export default function ProductPreview() {
   const intro="State-of-the-art production line combined with use of single species (Rubber wood) raw material helps us manufacture boards with unmatched density and strength. Back-to-back two head and four head sanding machines ensure precise thickness of mother boards which results in flawless pre-lamination.  "
@@ -12,7 +12,7 @@ export default function ProductPreview() {
           title="Strong, Precise, Superior"
         />
         <ul className="product-grid">
-          {productCategories.map((p) => (
+          {productCategoriesHome.map((p) => (
             <li key={p.id} className="product-card">
               <img src={p.image} alt={p.imageAlt} loading="lazy" width="600" height="400" />
               

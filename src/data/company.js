@@ -24,5 +24,3 @@ export const processSteps = [
   { title: 'Lamination', text: 'Decor papers are pressed onto the board in glossy, matte or suede finishes, with optional textures.' },
   { title: 'Testing and dispatch', text: 'Boards are checked against IS 3087 and IS 12823 parameters before they are stacked and sent out.' },
 ];
-
-export const sisterConcerns = ['Nailah', 'Gee Dee'];

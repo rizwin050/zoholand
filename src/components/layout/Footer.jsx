@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import site from '../../config/site';
 import { productCategories } from '../../data/products';
-import { sisterConcerns } from '../../data/company';
 import logoWhite from '../../assets/images/logo-white.png';
 
 export default function Footer() {
@@ -13,7 +12,6 @@ export default function Footer() {
           <p>
             Plain and pre-laminated particle boards from {site.legalName}( Formerly known as Greenland Particle Boards Pvt. ltd.), Perumbavoor, Kerala.
           </p>
-          <p className="site-footer__group">Sister concerns: {sisterConcerns.join(' and ')}</p>
         </div>
 
         <nav aria-label="Footer pages">
